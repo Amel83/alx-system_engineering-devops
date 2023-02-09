@@ -1,0 +1,2 @@
+#!/bitbasc
+mkdir -m777 my_dir
