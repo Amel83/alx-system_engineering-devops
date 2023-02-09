@@ -1,1 +1,2 @@
-!:mime magic.txt
+#!/bin/bash
+!:mime school
