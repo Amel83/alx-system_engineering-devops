@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# fizzbuzz again on script
+
+count=1
+while [ $count -le 100 ]
+do
+    if [ $((count % 5)) -eq 0 ] && [ $((count % 3)) -eq 0 ]; then
+        echo "FizzBuzz"
+    elif [ $((count % 5)) -eq 0 ]; then
+        echo "Buzz"
+    elif [ $((count % 3)) -eq 0 ]; then
+        echo "Fizz"
+    else
+        echo "$count"
+    fi
+    (( count++))
+done 
