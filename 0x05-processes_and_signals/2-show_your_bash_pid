@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# shellcheck disable=SC2009
+
+# Use 'ps' command to fetch the process information
+ps aux --forest | grep 'bash'
