@@ -1,4 +1,4 @@
-#!/usr/bin/env/ bash
+#!/usr/bin/env bash
 # using kill on Q.4
 #+ a sleep 2 in between each iteration.
 
