@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # don't use grep and filter the one with bash
 # shellcheck disable=SC2009
+
 ps aux --forest | awk '/bash/'
