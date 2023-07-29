@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# operate with the file
+
+echo $$ > /var/run/myscript.pi
+cleanup() {
+    echo "Terminating..."
+    rm -f /var/run/myscript.pid
+    exit 0
+}
+sigint_handler() {
+    echo "Y U no love me?!"
+}
+
+trap sigint_handler SIGINT
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 1
+done
+
