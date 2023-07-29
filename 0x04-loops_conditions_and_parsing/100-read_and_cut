@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
 # Read the content of /etc/passwd line by line
+
 while IFS=: read -r username _ userid _ homedir _
 do
     # Display the required fields
