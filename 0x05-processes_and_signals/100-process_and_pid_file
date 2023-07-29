@@ -1,20 +1,18 @@
 #!/usr/bin/env bash
 # operate with the file
 
-echo $$ > /var/run/myscript.pi
-cleanup() {
-    echo "Terminating..."
-    rm -f /var/run/myscript.pid
-    exit 0
-}
-sigint_handler() {
-    echo "Y U no love me?!"
+terminator() {
+rm /var/run/myscript.pid
+  exit
 }
 
-trap sigint_handler SIGINT
+echo "$$" > /var/run/myscript.pid
 
-while true; do
-    echo "To infinity and beyond"
-    sleep 1
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+  trap 'echo "Y U no love me?!"' SIGINT
+  trap 'echo "I hate the kill command" && terminator' SIGTERM
+  trap 'terminator' SIGQUITgit 
 done
-
