@@ -1,6 +1,4 @@
 #!/bin/bash
-
+# don't use grep and filter the one with bash
 # shellcheck disable=SC2009
-
-# Use 'ps' command to fetch the process information
 ps aux --forest | awk '/bash/'
