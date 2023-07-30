@@ -1,6 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# print out users
 
-# Set IFS to ":" to properly parse /etc/passwd entries
+
 IFS=":"
 
 # Read /etc/passwd line by line using the while loop
