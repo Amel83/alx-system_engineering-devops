@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Set IFS to ":" to properly parse /etc/passwd entries
+IFS=":"
+
+# Read /etc/passwd line by line using the while loop
+while read -r USER_NAME PASSWD USER_ID GROUP_ID USER_INFO HOME_DIR SHELL; do
+    # Extract user name, group id, home directory, and shell from /etc/passwd
+    # Escape single quotes in user info
+    USER_INFO=$(echo "$USER_INFO" | sed "s/'/\\\'/g")
+
+    # Display the formatted information for each user
+    echo "The user $USER_NAME is part of the $GROUP_ID gang, lives in $HOME_DIR and rides $SHELL. $USER_ID's place is protected by the passcode $PASSWD, more info about the user here: $USER_INFO"
+done < "/etc/passwd"
