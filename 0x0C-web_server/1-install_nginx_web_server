@@ -1,4 +1,5 @@
-ckage list to make sure you have the latest package information
+#!/usr/bin/env bash
+#ckage list to make sure you have the latest package information
 apt-get update
 
 # Install Nginx
