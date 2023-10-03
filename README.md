@@ -1,2 +1,1 @@
-yu
-dvg
+believe me i am learning from you
