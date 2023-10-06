@@ -1,4 +1,4 @@
-# Automating project requirements using Puppet
+# Automatre nts using Puppet
 
 package { 'nginx':
   ensure => installed,
