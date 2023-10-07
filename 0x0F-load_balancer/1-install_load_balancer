@@ -27,3 +27,4 @@ backend servers
 
 " >> /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
+# okay now what people i am tired
