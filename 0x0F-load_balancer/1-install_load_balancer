@@ -1,4 +1,6 @@
-#!/usr/bin/env bash                                        # here we are tring again and agian                        sudo apt-get install -y haproxy
+#!/usr/bin/env bash
+# here we are tring again and agian
+sudo apt-get install -y haproxy
 echo "ENABLED=1" >> /etc/default/haproxy
 mv /etc/haproxy/haproxy.cfg{,.original}
 touch /etc/haproxy/haproxy.cfg
