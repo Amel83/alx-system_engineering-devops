@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Go to sites-enabled folder for Nginx
-cd /etc/nginx/sites-enabled/ || exit;
-rm default;
-ln -s /etc/nginx/sites-available/default default;
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available /etc/nginx/sites-enabled/default
 service nginx restart
