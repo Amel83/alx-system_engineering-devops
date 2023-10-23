@@ -1,4 +1,4 @@
-!#/usr/bin/python3
+#!/usr/bin/python3
 #it it is meant to be it will be
 import requests
 import sys
