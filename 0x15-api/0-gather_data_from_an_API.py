@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-#it it is meant to be it will be
+#it it is meant to be it will bei
+
+
 import requests
 import sys
 
 def get_employee_todo_progress(employee_id):
     base_url = 'https://jsonplaceholder.typicode.com'
     
-    # Fetch employee data
     user_response = requests.get(f'{base_url}/users/{employee_id}')
     user_data = user_response.json()
     
@@ -16,7 +17,7 @@ def get_employee_todo_progress(employee_id):
 
     employee_name = user_data['name']
     
-    # Fetch employee's TODO list
+
     todos_response = requests.get(f'{base_url}/todos?userId={employee_id}')
     todos_data = todos_response.json()
     
