@@ -1,2 +1,14 @@
 #!/bin/bash
-ls -la  /. /.. /boot
+
+# List files in the current directory in long format
+echo "Current directory:"
+ls -la
+
+# List files in the parent directory in long format
+echo -e "\nParent directory:"
+ls -la ..
+
+# List files in the /boot directory in long format
+echo -e "\n/boot directory:"
+ls -la /boot
+
